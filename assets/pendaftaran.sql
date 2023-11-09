@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Nov 2023 pada 06.16
+-- Waktu pembuatan: 08 Nov 2023 pada 04.59
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sistemdaftar`
+-- Database: `pendaftaran`
 --
 
 -- --------------------------------------------------------
@@ -30,14 +30,14 @@ SET time_zone = "+00:00";
 CREATE TABLE `pendaftar` (
   `id` int(12) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `nisn` int(255) DEFAULT NULL,
+  `nisn` int(12) DEFAULT NULL,
   `alamat` varchar(255) DEFAULT NULL,
   `nama_ayah` varchar(255) DEFAULT NULL,
   `nama_ibu` varchar(255) DEFAULT NULL,
   `tempat_lahir` varchar(255) DEFAULT NULL,
   `acc_id` int(12) DEFAULT NULL,
   `tanggal_lahir` varchar(20) DEFAULT NULL,
-  `jurusan` enum('rpl','tja','tkj','dkv') DEFAULT NULL
+  `jurusan` enum('rpl','tkj','tja','dkv') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -54,8 +54,9 @@ CREATE TABLE `siswa_baru` (
   `nama_ayah` varchar(255) DEFAULT NULL,
   `nama_ibu` varchar(255) DEFAULT NULL,
   `tempat_lahir` varchar(255) DEFAULT NULL,
-  `tanggal_lahir` varchar(255) DEFAULT NULL,
-  `jurusan` enum('rpl','tja','tkj','dkv') DEFAULT NULL
+  `user_acc` int(12) DEFAULT NULL,
+  `jurusan` enum('rpl','tkj','tja','dkv') DEFAULT NULL,
+  `tanggal_lahir` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -104,19 +105,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `pendaftar`
 --
 ALTER TABLE `pendaftar`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `siswa_baru`
 --
 ALTER TABLE `siswa_baru`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

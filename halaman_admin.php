@@ -60,10 +60,10 @@ $select = mysqli_query($conn, "SELECT * FROM pendaftar");
 </head>
 <body>
     <div class="container">
-        <h2>PERMINTAAN PENDAFTARAN</h2>
+        <h2 style="text-align:center">PERMINTAAN PENDAFTARAN</h2>
         <table class="table table-bordered">
             <thead>
-                <tr>
+                <tr style="text-align:center">
                     <th>ID</th>
                     <th>Nama</th>
                     <th>NISN</th>
@@ -73,8 +73,9 @@ $select = mysqli_query($conn, "SELECT * FROM pendaftar");
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>Account ID</th>
-                    <th>Tindakan</th>
                     <th>Jurusan</th>
+                    <th>Tindakan</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -89,6 +90,7 @@ $select = mysqli_query($conn, "SELECT * FROM pendaftar");
                     $tempat_lahir = $row['tempat_lahir'];
                     $tanggal_lahir = $row['tanggal_lahir'];
                     $acc_id = $row['acc_id'];
+                    $jurusan=$row['jurusan'];
 
                     echo "<tr>";
                     echo "<td>$id</td>";
@@ -100,23 +102,21 @@ $select = mysqli_query($conn, "SELECT * FROM pendaftar");
                     echo "<td>$tempat_lahir</td>";
                     echo "<td>$tanggal_lahir</td>";
                     echo "<td>$acc_id</td>";
+                    echo "<td>$jurusan</td>";
                     echo "<td>";
-                    echo "<button class='custom-button'><a href='back/hapus.php?id=$id' style='text-decoration:none; color:white'>Tolak</a></button>";
-                    echo "<button class='custom-button'><a href='back/terima.php?id=$id' style='text-decoration:none; color:white'>Terima</a></button>";
+                    echo "<button class='custom-button' style='background-color:red'><a href='back/hapus.php?id=$id' style='text-decoration:none; color:white'>Tolak</a></button>";
+                    echo "<button class='custom-button' style='background-color:green'><a href='back/terima.php?id=$id' style='text-decoration:none; color:white'>Terima</a></button>";
                     echo "</td>";
                     echo "</tr>";
                 }
                 ?>
             </tbody>
         </table>
-        <?php
-        $siswa_baru = mysqli_query($conn, "SELECT * FROM siswa_baru");
-        ?>
-        <h2>SISWA YANG TELAH DITERIMA</h2>
+        <h2 style="text-align:center">SISWA YANG TELAH DITERIMA</h2>
         <button class="custom-button"><a href="halaman_daftar_admin.php" style="text-decoration:none; color:white">Masukkan Pendaftar</a></button>
         <table class="table table-bordered">
             <thead>
-                <tr>
+                <tr style="text-align:center">
                     <th>Nama</th>
                     <th>NISN</th>
                     <th>Alamat</th>
@@ -130,6 +130,7 @@ $select = mysqli_query($conn, "SELECT * FROM pendaftar");
             </thead>
             <tbody>
                 <?php
+                $siswa_baru = mysqli_query($conn, "SELECT * FROM siswa_baru");
                 while ($roww = mysqli_fetch_assoc($siswa_baru)) {
                     $name = $roww['name'];
                     $nisn = $roww['nisn'];
@@ -138,6 +139,19 @@ $select = mysqli_query($conn, "SELECT * FROM pendaftar");
                     $nama_ibu = $roww['nama_ibu'];
                     $tempat_lahir = $roww['tempat_lahir'];
                     $tanggal_lahir = $roww['tanggal_lahir'];
+                    $jurusann=$roww['jurusan'];
+                    if ($jurusann=="rpl"){
+                        $jf="Rekayasa Perangkat Lunak";
+                    }
+                    elseif ($jurusann=="tkj"){
+                        $jf="Teknik Komputer Jaringan";
+                    }
+                    elseif ($jurusann=="tja"){
+                        $jf="Teknik Jaringan Akses";
+                    }
+                    elseif ($jurusann=="dkv"){
+                        $jf="Desain Komunikasi Visual";
+                    }
                     echo "<tr>";
                     echo "<td>$name</td>";
                     echo "<td>$nisn</td>";
@@ -146,6 +160,7 @@ $select = mysqli_query($conn, "SELECT * FROM pendaftar");
                     echo "<td>$nama_ibu</td>";
                     echo "<td>$tempat_lahir</td>";
                     echo "<td>$tanggal_lahir</td>";
+                    echo "<td>$jf</td>";
                     echo "</tr>";
                 }
                 ?>

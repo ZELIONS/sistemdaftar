@@ -50,6 +50,18 @@
 							"subViews": [
 								{
 									"_type": "LabelView",
+									"_id": "AAAAAAGLtI4JCI1akmA=",
+									"_parent": {
+										"$ref": "AAAAAAGLGcxbm4cW+iU="
+									},
+									"font": "Arial;13;0",
+									"left": 242,
+									"top": 61,
+									"width": 197,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
 									"_id": "AAAAAAGLqDbVRGQScBQ=",
 									"_parent": {
 										"$ref": "AAAAAAGLGcxbm4cW+iU="
@@ -119,7 +131,7 @@
 									"top": 66,
 									"width": 197,
 									"height": 13,
-									"text": "pendaftar",
+									"text": "user",
 									"wordWrap": true
 								},
 								{
@@ -153,6 +165,18 @@
 								"$ref": "AAAAAAGLGcxhuocf+nw="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGLtI4JCY1kbps=",
+									"_parent": {
+										"$ref": "AAAAAAGLGcxhu4chUfI="
+									},
+									"font": "Arial;13;0",
+									"left": 458,
+									"top": 893,
+									"width": 133,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGLqDbVRWQbDFQ=",
@@ -269,7 +293,7 @@
 									"top": 810,
 									"width": 115,
 									"height": 13,
-									"text": "data pendaftar",
+									"text": "registrant data",
 									"wordWrap": true
 								},
 								{
@@ -317,7 +341,7 @@
 									"top": 672,
 									"width": 285,
 									"height": 13,
-									"text": "pendaftaran siswa baru",
+									"text": "new student registration",
 									"wordWrap": true
 								},
 								{
@@ -375,7 +399,7 @@
 										"$ref": "AAAAAAGLGdDrZYdTcJM="
 									},
 									"edgePosition": 1,
-									"text": "isi data pendaftaran"
+									"text": "fill registration form"
 								}
 							],
 							"font": "Arial;13;0",
@@ -421,7 +445,7 @@
 										"$ref": "AAAAAAGLGdKw4odv07k="
 									},
 									"edgePosition": 1,
-									"text": "data pendaftar"
+									"text": "registrant data"
 								}
 							],
 							"font": "Arial;13;0",
@@ -467,7 +491,7 @@
 										"$ref": "AAAAAAGLGdL+sod7LwI="
 									},
 									"edgePosition": 1,
-									"text": "verifikasi"
+									"text": "veirf"
 								}
 							],
 							"font": "Arial;13;0",
@@ -513,7 +537,7 @@
 										"$ref": "AAAAAAGLGdN/MYeI/Q8="
 									},
 									"edgePosition": 1,
-									"text": "data pendaftar"
+									"text": "registrant data"
 								}
 							],
 							"font": "Arial;13;0",
@@ -550,7 +574,7 @@
 									"top": 200,
 									"width": 165,
 									"height": 13,
-									"text": "pembuatan akun",
+									"text": "account creation",
 									"wordWrap": true
 								},
 								{
@@ -598,9 +622,9 @@
 										"$ref": "AAAAAAGLGduaaoe2of4="
 									},
 									"font": "Arial;13;0",
-									"left": 592,
+									"left": 587,
 									"top": 95,
-									"width": 33.24267578125,
+									"width": 43.34814453125,
 									"height": 13,
 									"alpha": -1.666655661637204,
 									"distance": 104.47966309287182,
@@ -608,7 +632,7 @@
 										"$ref": "AAAAAAGLGduaaoe4bas="
 									},
 									"edgePosition": 1,
-									"text": "daftar"
+									"text": "register"
 								}
 							],
 							"font": "Arial;13;0",
@@ -644,8 +668,8 @@
 									"left": 956,
 									"top": 226,
 									"width": 65.76171875,
-									"height": 26,
-									"text": "data pengguna",
+									"height": 13,
+									"text": "user data",
 									"wordWrap": true
 								},
 								{
@@ -692,9 +716,9 @@
 										"$ref": "AAAAAAGLGdyLSIfVmX8="
 									},
 									"font": "Arial;13;0",
-									"left": 864,
+									"left": 862,
 									"top": 159,
-									"width": 83.84619140625,
+									"width": 86.75341796875,
 									"height": 13,
 									"alpha": -1.8490972777287351,
 									"distance": 65.52098900352466,
@@ -702,7 +726,7 @@
 										"$ref": "AAAAAAGLGdyLSIfXPSw="
 									},
 									"edgePosition": 1,
-									"text": "data pendaftar"
+									"text": "user data"
 								}
 							],
 							"font": "Arial;13;0",
@@ -785,7 +809,7 @@
 									"top": 352,
 									"width": 101,
 									"height": 13,
-									"text": "proses masuk",
+									"text": "login process",
 									"wordWrap": true
 								},
 								{
@@ -889,7 +913,7 @@
 										"$ref": "AAAAAAGLGeLFdohVu/w="
 									},
 									"edgePosition": 1,
-									"text": "cek data pengguna"
+									"text": "check user data"
 								}
 							],
 							"font": "Arial;13;0",
@@ -935,7 +959,7 @@
 										"$ref": "AAAAAAGLGeNgMYhmIiE="
 									},
 									"edgePosition": 1,
-									"text": "data ditemukan"
+									"text": "data found"
 								}
 							],
 							"font": "Arial;13;0",
@@ -981,7 +1005,7 @@
 										"$ref": "AAAAAAGLGeSRoYiCytI="
 									},
 									"edgePosition": 1,
-									"text": "halaman pengguna"
+									"text": "user page"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1018,7 +1042,7 @@
 									"top": 696,
 									"width": 118.18994140625,
 									"height": 13,
-									"text": "verifikasi",
+									"text": "verification",
 									"wordWrap": true
 								},
 								{
@@ -1067,16 +1091,16 @@
 									},
 									"font": "Arial;13;0",
 									"left": 231,
-									"top": 671,
-									"width": 80.91357421875,
+									"top": 704,
+									"width": 104.0380859375,
 									"height": 13,
-									"alpha": -0.7853985480129806,
-									"distance": 18.384776310850235,
+									"alpha": 1.5182137900458479,
+									"distance": 19.026297590440446,
 									"hostEdge": {
 										"$ref": "AAAAAAGLGe1Jz4jJYUM="
 									},
 									"edgePosition": 1,
-									"text": "hasil verifikasi"
+									"text": "verification results"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1113,7 +1137,7 @@
 									"top": 538,
 									"width": 65.76171875,
 									"height": 26,
-									"text": "data siswa baru",
+									"text": "new student",
 									"wordWrap": true
 								},
 								{
@@ -1170,7 +1194,7 @@
 										"$ref": "AAAAAAGLGe7ZmIjxLCI="
 									},
 									"edgePosition": 1,
-									"text": "siswa diterima"
+									"text": "student acc"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1253,7 +1277,7 @@
 									"top": 1000,
 									"width": 165,
 									"height": 13,
-									"text": "hapus data ",
+									"text": "delete data",
 									"wordWrap": true
 								},
 								{
@@ -1301,9 +1325,9 @@
 										"$ref": "AAAAAAGLqCpKC5LYxfE="
 									},
 									"font": "Arial;13;0",
-									"left": 167,
+									"left": 157,
 									"top": 840,
-									"width": 73.6962890625,
+									"width": 92.50439453125,
 									"height": 13,
 									"alpha": 1.5096480775838246,
 									"distance": 49.09175083453431,
@@ -1311,7 +1335,7 @@
 										"$ref": "AAAAAAGLqCpKC5LaNjA="
 									},
 									"edgePosition": 1,
-									"text": "siswa ditolak"
+									"text": "student rejected"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1357,7 +1381,7 @@
 										"$ref": "AAAAAAGLqCp4VJLmxp4="
 									},
 									"edgePosition": 1,
-									"text": "hapus data pendaftar"
+									"text": "delete registrant data"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1381,7 +1405,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "pendaftar",
+					"name": "user",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1389,7 +1413,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGcxbmocUoC4="
 							},
-							"name": "isi data pendaftaran",
+							"name": "fill registration form",
 							"source": {
 								"$ref": "AAAAAAGLGcxbmocUoC4="
 							},
@@ -1403,7 +1427,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGcxbmocUoC4="
 							},
-							"name": "daftar",
+							"name": "register",
 							"source": {
 								"$ref": "AAAAAAGLGcxbmocUoC4="
 							},
@@ -1441,7 +1465,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGcxhuocf+nw="
 							},
-							"name": "verifikasi",
+							"name": "veirf",
 							"source": {
 								"$ref": "AAAAAAGLGcxhuocf+nw="
 							},
@@ -1457,7 +1481,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "data pendaftar"
+					"name": "registrant data"
 				},
 				{
 					"_type": "DFDProcess",
@@ -1465,7 +1489,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "pendaftaran siswa baru",
+					"name": "new student registration",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1473,7 +1497,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGcxu44c1zrU="
 							},
-							"name": "data pendaftar",
+							"name": "registrant data",
 							"source": {
 								"$ref": "AAAAAAGLGcxu44c1zrU="
 							},
@@ -1487,7 +1511,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGcxu44c1zrU="
 							},
-							"name": "data pendaftar",
+							"name": "registrant data",
 							"source": {
 								"$ref": "AAAAAAGLGcxu44c1zrU="
 							},
@@ -1501,7 +1525,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGcxu44c1zrU="
 							},
-							"name": "hasil verifikasi",
+							"name": "verification results",
 							"source": {
 								"$ref": "AAAAAAGLGcxu44c1zrU="
 							},
@@ -1517,7 +1541,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "pembuatan akun",
+					"name": "account creation",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1525,7 +1549,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGdpjUYeZDy4="
 							},
-							"name": "data pendaftar",
+							"name": "user data",
 							"source": {
 								"$ref": "AAAAAAGLGdpjUYeZDy4="
 							},
@@ -1569,7 +1593,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "data pengguna",
+					"name": "user data",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1577,7 +1601,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGdxPOYfJlpY="
 							},
-							"name": "data ditemukan",
+							"name": "data found",
 							"source": {
 								"$ref": "AAAAAAGLGdxPOYfJlpY="
 							},
@@ -1593,7 +1617,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "proses masuk",
+					"name": "login process",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1601,7 +1625,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGeDW0Ygvnys="
 							},
-							"name": "cek data pengguna",
+							"name": "check user data",
 							"source": {
 								"$ref": "AAAAAAGLGeDW0Ygvnys="
 							},
@@ -1615,7 +1639,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGeDW0Ygvnys="
 							},
-							"name": "halaman pengguna",
+							"name": "user page",
 							"source": {
 								"$ref": "AAAAAAGLGeDW0Ygvnys="
 							},
@@ -1631,7 +1655,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "verifikasi",
+					"name": "verification",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1639,7 +1663,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGezY/4i0N2A="
 							},
-							"name": "siswa diterima",
+							"name": "student acc",
 							"source": {
 								"$ref": "AAAAAAGLGezY/4i0N2A="
 							},
@@ -1653,7 +1677,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLGezY/4i0N2A="
 							},
-							"name": "siswa ditolak",
+							"name": "student rejected",
 							"source": {
 								"$ref": "AAAAAAGLGezY/4i0N2A="
 							},
@@ -1669,7 +1693,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "data siswa baru"
+					"name": "new student"
 				},
 				{
 					"_type": "DFDProcess",
@@ -1677,7 +1701,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGLGcxJXYcPbDE="
 					},
-					"name": "hapus data ",
+					"name": "delete data",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1685,7 +1709,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGLqCoVW5LLXLk="
 							},
-							"name": "hapus data pendaftar",
+							"name": "delete registrant data",
 							"source": {
 								"$ref": "AAAAAAGLqCoVW5LLXLk="
 							},

@@ -42,7 +42,7 @@ if ($admin_query) {
 
 <body>
     <div class="container">
-        <h1>Selamat Datang <?php 
+        <h1 style="text-align:center">Selamat Datang <?php 
         $nama=mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM user where id=$id"));
         echo $nama['username'];
         ?>
@@ -59,7 +59,7 @@ if ($admin_query) {
 
         <ul class="list-group">
             <li class="list-group-item">
-                <h3>Jurusan: Teknik Jaringan Aksen</h3>
+                <h3>Jurusan: Teknik Jaringan Akses</h3>
                 <strong>Akreditasi:</strong> A
                 <br>
                 <strong>Kurikulum:</strong> Merdeka
@@ -83,7 +83,20 @@ if ($admin_query) {
                 <strong>Kurikulum:</strong> Merdeka
             </li>
         </ul>
-        <p><a href="halaman_daftar.php">Tertarik untuk bergabung? Daftar sekarang</a></p>
+        <?php 
+            $cekdaftar=mysqli_query($conn,"SELECT * FROM pendaftar where acc_id=$id");
+            $cekterima=mysqli_query($conn,"SELECT * FROM siswa_baru where user_acc=$id");
+
+            if (mysqli_num_rows($cekdaftar) > 0) {
+                echo "<p style='color:red; text-align:center'>Anda Telah Mengirim Permintaan Pendaftaran Di SMK Telkom 1 Medan</p>";
+            }
+            elseif( mysqli_num_rows($cekterima)>0){
+                echo "<p style='color:yellow; text-align:center'>Selamat! Anda Telah Diterima di SMK Telkom 1 Medan!</p>";
+            }
+            else{
+                echo "<p><a href='halaman_daftar.php'>Tertarik untuk bergabung? Daftar sekarang</a></p>";
+            }
+        ?>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

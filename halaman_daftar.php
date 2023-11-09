@@ -20,6 +20,19 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 
+$cekdaftar=mysqli_query($conn,"SELECT * FROM pendaftar where acc_id=$id");
+$cekterima=mysqli_query($conn,"SELECT * FROM siswa_baru where user_acc=$id");
+
+if (mysqli_num_rows($cekdaftar) > 0) {
+    header("location:halaman_pengguna.php");
+}
+elseif( mysqli_num_rows($cekterima)>0){
+    header("location:halaman_pengguna.php");
+
+}
+else{
+    
+}
 ?>
 
 <!DOCTYPE html>

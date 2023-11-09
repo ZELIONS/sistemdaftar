@@ -31,14 +31,15 @@ $nama_siswa = mysqli_fetch_assoc($data_siswa = mysqli_query($conn, "SELECT name 
             color: #fff; 
         }
         body {
-            background-color: #f3f3f3; 
+            background-color: #343a40; 
+            color: #fff; 
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Selamat <?php echo $nama_siswa['name']; ?>! Anda telah terdaftar di SMK Telkom Medan</h1>
+        <h1>Selamat <?php echo $nama_siswa['name']; ?>! Anda telah mengirim data pendaftaran di SMK Telkom Medan</h1>
         <h2>Syarat Registrasi - 10 April 2024</h2>
         <p>Berikut adalah daftar syarat yang harus Anda bawa saat registrasi pada tanggal 10 April 2024:</p>
         <ol>
