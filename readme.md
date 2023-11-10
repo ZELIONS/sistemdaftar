@@ -48,12 +48,15 @@ Database:
 	)
 
 EKSTENSI:
-	-HTML IntelliSense: Menyediakan fitur pengkodean otomatis, tag completion, dan dukungan 	lainnya untuk memudahkan penulisan HTML.
 
 	-PHP IntelliSense: Memberikan dukungan pengkodean otomatis untuk PHP, termasuk fungsi dan variabel.
+
+	PHP Intelephense:auto complete php kode
 
 	-Auto Rename Tag: Mengganti otomatis tag penutup saat tag pembuka diubah.
 
 	-Auto Close Tag: Menutup tag HTML secara otomatis setelah mengetikkan tanda penutup.
 
-	-HTML Snippets: Menyediakan snippet atau potongan kode untuk HTML yang umum digunakan.
+	-IntelliSense for CSS class names in HTML: memberi rekomendasi nama class dan opsi untuk melakukan auto complete pada saat memberikan class pada element di html
+
+	
